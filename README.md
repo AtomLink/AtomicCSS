@@ -9,6 +9,7 @@ Welcome to AtomicCSS! AtomicCSS is a repository within the AtomLink organization
 
 1. **AtomicLoader:** A customizable loader component with smooth transitions and theme switching capabilities.
 2. **AtomicSpinner:** An animated spinner component that can be easily integrated into web applications.
+2. **AtomicDataPulseLogIn:** A log in form component that can be easily added to web applications.
 
 ## Previews
 
@@ -24,6 +25,14 @@ Welcome to AtomicCSS! AtomicCSS is a repository within the AtomLink organization
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="previews/dark/atomic-spinner-preview.gif">
   <source media="(prefers-color-scheme: light)" srcset="previews/light/atomic-spinner-preview.gif">
+  <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="previews/dark/atomic-spinner-preview.gif">
+</picture>
+
+### AtomicDataPulseLogIn Preview
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="previews/dark/atomic-data-pulse-log-in.gif">
+  <source media="(prefers-color-scheme: light)" srcset="previews/light/atomic-data-pulse-log-in.gif">
   <img alt="Shows an illustrated sun in light mode and a moon with stars in dark mode." src="previews/dark/atomic-spinner-preview.gif">
 </picture>
 
