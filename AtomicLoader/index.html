@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AtomicSpinner</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- This link is for additional codes that are unrelated to the main code -->
+        <link rel="stylesheet" href="css/theme-transition.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="loader">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <circle r="3" fill="skyblue" cx="50" cy="50"></circle>
+                    <path id="motion-path" fill="none" stroke="rgba(203, 203, 203, 0.44)" stroke-miterlimit="10" d="M 47,82 A10,35 180 1 1 47.1,82.1"/>
+                    <circle r="2" fill="skyblue">
+                        <animateMotion dur="1.1s" repeatCount="indefinite">
+                            <mpath xlink:href="#motion-path" />
+                        </animateMotion>
+                    </circle>
+                    <path id="motion-path1" fill="none" stroke="rgba(203, 203, 203, 0.44)" stroke-miterlimit="10" d="M 74.5,55.9  A10,35 120 1 0 74.6,56"/>
+                    <circle r="2" fill="skyblue">
+                        <animateMotion dur="0.9s" repeatCount="indefinite">
+                            <mpath xlink:href="#motion-path1" />
+                        </animateMotion>
+                    </circle>
+                    <path id="motion-path2" fill="none" stroke="rgba(203, 203, 203, 0.44)" stroke-miterlimit="10" d="M 80.7,31.0  A10,35 60 1 0 80.8,31.1"/>
+                    <circle r="2" fill="skyblue">
+                        <animateMotion dur="1s" repeatCount="indefinite">
+                            <mpath xlink:href="#motion-path2" />
+                        </animateMotion>
+                    </circle>
+                </svg>
+            </div>
+        </div>
+
+        <!-- These additional codes have nothing to do with the main code. -->
+        <button id="themeButton">Toggle Theme</button>
+
+        <!-- This link is for additional codes that are unrelated to the main code -->
+        <script src="js/themeSwitcher.js"></script>
+    </body>
+</html>
