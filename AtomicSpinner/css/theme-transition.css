@@ -1,0 +1,39 @@
+/* These additional codes have nothing to do with the main code. */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    color: #333333;
+	transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+body.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#themeButton {
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#themeButton:hover {
+	background-color: #2980b9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

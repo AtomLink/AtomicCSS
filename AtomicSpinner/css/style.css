@@ -1,0 +1,66 @@
+.atom {
+	position: relative;
+	display: flex;
+	height: 200px;
+	width: 200px;
+	align-items: center;
+	justify-content: center;
+}
+
+.atom::before {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	box-shadow: inset 0 0 10px #000000;
+	border-radius: 50%;
+}
+
+.line {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.line-1,
+.line-2,
+.line-3,
+.line-4 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border-bottom: 10px solid #000;
+	border-top: 10px solid #000;
+	animation: rotateLine 3s linear infinite;
+}
+
+.line-1 { animation-name: line1; }
+.line-2 { animation-name: line2; }
+.line-3 { animation-name: line3; }
+.line-4 { animation-name: line4; }
+
+@keyframes rotateLine {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+@keyframes line1 {
+	from { transform: rotateX(70deg) rotateY(-70deg) rotateZ(0deg); }
+	to { transform: rotateX(70deg) rotateY(-70deg) rotateZ(360deg); }
+}
+
+@keyframes line2 {
+	from { transform: rotateX(-70deg) rotateY(-70deg) rotateZ(0deg); }
+	to { transform: rotateX(-70deg) rotateY(-70deg) rotateZ(360deg); }
+}
+
+@keyframes line3 {
+	from { transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg); }
+	to { transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg); }
+}
+
+@keyframes line4 {
+	from { transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg); }
+	to { transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg); }
+}
